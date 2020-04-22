@@ -18,13 +18,21 @@ namespace _03_Eventos
         {
             InitializeComponent();
 
+            btnVideoEncode.Click += EventoDeClick;
+        }
+
+        public void EventoDeClick(object sender, EventArgs e)
+        {
+            Video video = new Video() { Nome = "Vídeo.mp4" };
+
             VideoEncode videoEncode = new VideoEncode();
 
             videoEncode.Encoded += new Email().EnviarMensagem;
             videoEncode.Encoded += new SMS().EnviarMensagem;
 
-
-
+            videoEncode.Encode(video);
         }
+
+       
     }
 }
