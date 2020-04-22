@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using _03_Eventos.Lib;
+using _03_Eventos.Lib.Mensageiro;
 
 namespace _03_Eventos
 {
@@ -15,6 +17,14 @@ namespace _03_Eventos
         public Form1()
         {
             InitializeComponent();
+
+            VideoEncode videoEncode = new VideoEncode();
+
+            videoEncode.Encoded += new Email().EnviarMensagem;
+            videoEncode.Encoded += new SMS().EnviarMensagem;
+
+
+
         }
     }
 }
