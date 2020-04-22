@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate e Eventos", "Delegate e Eventos\Delegate e Eventos.csproj", "{4B52D3D9-CB64-4C5B-9B2D-AA27CB02E4B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Delegates", "Delegate e Eventos\01_Delegates.csproj", "{4B52D3D9-CB64-4C5B-9B2D-AA27CB02E4B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
